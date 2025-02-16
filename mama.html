@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Mamá</title>
+    <link rel="stylesheet" href="mama.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Menú desplegable -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Opciones</a>
+                    <div class="dropdown-content">
+                        <a href="#">Tarjetas</a>
+                        <a href="#">Fotos</a>
+                        <a href="#">Mensajes</a>
+                    </div>
+                </li>
+                <li><a href="#">Sobre Mamá</a></li>
+                <li><a href="#">Contactar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <section class="main-content">
+        <h1>¡Feliz Cumpleaños Mamá!</h1>
+        <p>Te quiero mucho, ¡espero que tengas un día maravilloso!</p>
+        
+        <div class="cards">
+            <!-- Tarjetas de texto -->
+            <div class="card">
+                <img src="mama.jpg" alt="Foto de mamá" />
+                <h2>¡¡Hace 61 años nació una niña muy especial!!</h2>
+                <p>♥</p>
+            </div>
+
+            <div class="card">
+                <img src="mama1.jpg" alt="Foto de mamá" />
+               
+                <p>Y aunque han pasado los años, sigues siendo una niña en su corazón, eres una persona muy especial, no solo para mí, sino para los que te rodean también.</p>
+            </div>
+
+            <!-- Fotos -->
+            <div class="card">
+                <img src="mama2.jpg" alt="Mamá y yo" />
+                <p>Te felicito mamá, eres la mejor compañera en mis viajes y proyectos. ¡Te adoro!</p>
+            </div>
+
+            <div class="card">
+                <img src="mama3.jpg" alt="Feliz Momento" />
+                <p>¡Eres una luz radiante que hace más hermoso cada día de mi vida, gracias por todo lo que haces por mí, mamá!</p>
+                
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tu hija Cristina | ¡Te Amo Mamá!</p>
+    </footer>
+
+    <!-- Script para dropdown -->
+    <script>
+        $(document).ready(function(){
+            $(".dropdown").hover(function(){
+                $(this).children(".dropdown-content").stop(true, true).slideDown(200);
+            }, function(){
+                $(this).children(".dropdown-content").stop(true, true).slideUp(200);
+            });
+        });
+    </script>
+</body>
+</html>
